@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC in my heart</title>
+    <link rel="stylesheet" href="/assets/dangky.css">
+</head>
+
+
+<body>
+    <header>
+        <nav class="header1" >
+            <ul>
+                
+                <a href="Thucdon.html">
+                    <li> <img src="/assets/img/kfc-logo.jpg" width="50px"  alt="Logo"></li>
+                </a>
+                
+                <li class="xr"><a href="Thucdon.html">THỰC ĐƠN</a></li>
+                <li class="xr"><a href="uudai.html">KHUYẾN MÃI</a></li>
+                <li class="xr"><a href="#">DỊCH VỤ TIỆC</a></li>
+                <li class="xr"><a href="#">HỆ THỐNG NHÀ HÀNG</a></li>
+                
+                <li class="icon1"><a href="#"><i class="fas fa-user"></i><img src="/assets/img/Screenshot 2024-04-21 112248.png"></a></li>
+                <li class="icon1"><a href="#"><i class="fas fa-shopping-cart"></i><img src="/assets/img/Screenshot 2024-04-21 102053.png" ></a></li>
+                <li class="icon1"><a href="#"><i class="fas fa-bars"></i><img src="/assets/img/Screenshot 2024-04-21 104426.png"></a></li> 
+            </ul>
+        </nav>
+     
+    </header>
+    <div class="row">
+        <div class="colm-logo">
+            <img src="/assets/img/login.jpg" alt="">
+        </div>
+        <div class="colm-form">
+            <div class="form-container">
+                <input type="text" placeholder="Họ của bạn">
+                <input type="text" placeholder="Tên của bạn">
+                <input type="text" placeholder="Số điện thoại">
+                <input type="text" placeholder="Địa chỉ email của bạn"> 
+                <input type="password" placeholder="Password">
+                <a href="/login.html">
+                    <button class="btn-login"> Đăng ký</button>
+                </a>
+                <a href="/login.html">Đăng nhập</a>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Danh mục món ăn ưu đãi</h3>
+                <ul>
+                    <li>Gà mới</li>
+                    <li>Gà rán Tenders siêu cay</li>
+                    <li>Gà rán Tenders siêu cay</li>
+                    <li>Gà rán siêu ngon</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Món mới</h3>
+                <ul>
+                    <li> Gà Quay</li>
+                    <li> Phi-lê Gà Quay</li>
+                    <li> Burger Tôm</li>
+                    <li> Burger Zinger</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Combo 1 người</h3>
+                <ul>
+                    <li>Combo ăn trưa</li>
+                    <li>Combo ăn sáng</li>
+                    <li>Combo ăn tối</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Combo nhóm</h3>
+                <ul>
+                    <li>Combo gia đình</li>
+                    <li>Combo bạn bè</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Liên hệ:</p>
+            <p>Địa chỉ: 123 Đường Lê Lợi, Thành phố mới</p>
+            <p>Điện thoại:0977096123</p>
+            <p>Email: np21062004@gmail.com</p>
+        </div>
+        
+    </footer>
+    
+     <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.classList.add('hovered');
+            });
+
+            item.addEventListener('mouseout', () => {
+                item.classList.remove('hovered');
+            });
+        });
+
+        
+        window.addEventListener('scroll', function() {
+            var nav1 = document.querySelector('.nav-1');
+            if (window.scrollY > 0) {
+                nav1.classList.add('hide');
+            } else {
+                nav1.classList.remove('hide');
+            }
+        });
+    </script>
+</body>
+</html>

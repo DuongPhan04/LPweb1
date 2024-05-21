@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/login.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="header1" >
+            <ul>
+                <a href="Thucdon.html">
+                    <li> <img src="/assets/img/kfc-logo.jpg" width="50px"  alt="Logo"></li>
+                </a>
+                <li class="xr"><a href="Thucdon.html">THỰC ĐƠN</a></li>
+                <li class="xr"><a href="uudai.html">KHUYẾN MÃI</a></li>
+                <li class="xr"><a href="#">DỊCH VỤ TIỆC</a></li>
+                <li class="xr"><a href="#">HỆ THỐNG NHÀ HÀNG</a></li>
+                <li class="icon1"><a href="#"><i class="fas fa-user"></i><img src="/assets/img/Screenshot 2024-04-21 112248.png"></a></li>
+                <li class="icon1"><a href="#"><i class="fas fa-shopping-cart"></i><img src="/assets/img/Screenshot 2024-04-21 102053.png" ></a></li>
+                <li class="icon1"><a href="#"><i class="fas fa-bars"></i><img src="/assets/img/Screenshot 2024-04-21 104426.png"></a></li> 
+            </ul>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="colm-logo">
+            <img src="/assets/img/login.jpg" alt="">
+        </div>
+        <div class="colm-form">
+            <div class="form-container">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="btn-login">Login</button>
+
+                <!-- Forgot Password Link -->
+                <a href="#" id="forgotPasswordLink">Quên mật khẩu ?</a>
+
+                <a href="/kfc/dangky.html">
+                    <button class="btn-new">Đăng ký</button>
+                <button class="btn-new1">Đăng nhập bằng Gmail</button>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Bạn quên mật khẩu?</h2>
+            <p>Đừng lo lắng, bạn có thể đặt lại dễ dàng.</p>
+            <p>Chúng tôi sẽ gửi cho bạn một email có liên kết để đặt lại mật khẩu của bạn.</p>
+            <label for="email">Địa chỉ email của bạn</label><br>
+            <input type="email" id="email" name="email" placeholder="Hãy điền địa chỉ email của bạn."><br><br>
+            <button>Gửi Email Đặt lại Mật khẩu</button>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer content remains unchanged --> 
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Danh mục món ăn ưu đãi</h3>
+                <ul>
+                    <li>Gà mới</li>
+                    <li>Gà rán Tenders siêu cay</li>
+                    <li>Gà rán Tenders siêu cay</li>
+                    <li>Gà rán siêu ngon</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Món mới</h3>
+                <ul>
+                    <li> Gà Quay</li>
+                    <li> Phi-lê Gà Quay</li>
+                    <li> Burger Tôm</li>
+                    <li> Burger Zinger</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Combo 1 người</h3>
+                <ul>
+                    <li>Combo ăn trưa</li>
+                    <li>Combo ăn sáng</li>
+                    <li>Combo ăn tối</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Combo nhóm</h3>
+                <ul>
+                    <li>Combo gia đình</li>
+                    <li>Combo bạn bè</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Liên hệ:</p>
+            <p>Địa chỉ: 123 Đường Lê Lợi, Thành phố mới</p>
+            <p>Điện thoại:0977096123</p>
+            <p>Email: np21062004@gmail.com</p>
+        </div>
+        
+    </footer>
+
+    <script>
+        // ... (Your existing JavaScript) ...
+
+        // Modal JavaScript
+        var modal = document.getElementById("forgotPasswordModal");
+        var btn = document.getElementById("forgotPasswordLink");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
